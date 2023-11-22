@@ -1,1 +1,16 @@
-/home/soumik/.config/sublime-text/Packages/User/Preferences.sublime-settings
+{
+	"font_size": 15,
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"theme": "Default Dark.sublime-theme",
+	"caret_style": "smooth",
+	"highlight_line": true,
+	"remember_open_files" :false,
+	"hot_exit":false,
+	"word_wrap":true,	
+	"save_on_focus_lost":true,
+	"ignored_packages":
+	[
+		"Anaconda",
+		"Vintage",
+	],
+}

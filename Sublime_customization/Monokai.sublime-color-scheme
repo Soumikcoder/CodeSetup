@@ -1,1 +1,33 @@
-/home/soumik/.config/sublime-text/Packages/User/Monokai.sublime-color-scheme
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+		"black4": "hsl(259, 0%, 4%)",
+		"blue2": "hsl(207, 22%, 16%)",
+		"black5": "hsl(207, 52%, 10%)",
+	},
+	"globals":
+	{
+		"background": "var(black)",
+		"line_highlight": "var(blue2)",
+		"selection": "var(black5)",
+	},
+	"rules":
+	[
+		{
+            "name": "diff.inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(green)"
+        },
+        {
+            "scope": "diff.inserted",
+            "background": "hsla(80, 50%, 53%, 0.15)",
+            "foreground_adjust": "l(+ 5%)"
+        },
+        {
+            "scope": "diff.inserted.char",
+            "background": "hsla(80, 65%, 53%, 0.30)",
+            "foreground_adjust": "l(+ 10%)"
+        },
+	]
+}

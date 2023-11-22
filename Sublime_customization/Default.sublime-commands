@@ -1,1 +1,12 @@
-/home/soumik/.config/sublime-text/Packages/User/Default.sublime-commands
+[
+   {
+        "caption": "Terminal (panel)",
+        "command": "terminus_open",
+        "args"   : {
+           "cmd": "bash",
+           "cwd": "${file_path:${folder}}",
+           "title": "Command Prompt",
+           "panel_name": "Terminus"
+        }
+   },
+]  

@@ -1,1 +1,11 @@
-/home/soumik/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap
+[
+   {
+       "keys": ["alt+1"],
+       "command": "terminus_open",
+       "args" : {
+           "cmd": "bash",
+           "cwd": "${file_path:${folder}}",
+           "panel_name": "Terminus"
+       }
+   }
+] 

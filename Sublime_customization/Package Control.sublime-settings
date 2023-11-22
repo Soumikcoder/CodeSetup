@@ -1,1 +1,17 @@
-/home/soumik/.config/sublime-text/Packages/User/Package Control.sublime-settings
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"A File Icon",
+		"Anaconda",
+		"ColorPick",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeGit",
+		"SublimeTextAPICompletions",
+		"Terminus",
+	],
+	"in_process_packages":
+	[
+	],
+}

@@ -1,1 +1,17 @@
-/home/soumik/.config/sublime-text/Packages/User/Mariana.sublime-color-scheme
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+	},
+	"globals":
+	{
+		"background": "var(black)",
+		"foreground": "var(orange)",
+		 "line_highlight": "var(grey)",
+		
+	},
+	"rules":
+	[
+		
+	]
+}
