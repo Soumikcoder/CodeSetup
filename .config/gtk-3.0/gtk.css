@@ -1,0 +1,37 @@
+.titlebutton{
+	min-height: 10px;
+	min-width: 10px;
+	color: transparent;
+	margin: 2px;
+	padding: 0px;
+	background-position: center;
+    background-repeat: no-repeat;
+/*	border-radius:px ;*/
+}
+.titlebutton:hover{
+	color: white;
+	border-style: block;
+}
+
+/*image{
+	-gtk-icon-transform:scale();
+}*/
+.titlebutton.close{
+	background:red;
+	
+}
+.titlebutton.close:hover{
+	box-shadow: 0 1px 10px red;
+}
+.titlebutton.maximize{
+	background:orange;
+}
+.titlebutton.maximize:hover{
+	box-shadow: 0 1px 10px orange;
+}
+.titlebutton.minimize{
+	background:green;
+}
+.titlebutton.minimize:hover{
+	box-shadow: 0 1px 10px green;
+}
