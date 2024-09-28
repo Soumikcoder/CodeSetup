@@ -116,13 +116,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#add PATH
+#add PATH to ZSHRC
+alias cpu="sensors | grep -Po '\+\d{2}\.\d\WC\s'"
 export PATH="/home/soumik/.local/bin:$PATH"
-
+export PATH="/opt/lampp:$PATH"
+export JAVA_HOME='/usr/lib/jvm/java-21-openjdk-amd64'
+alias calc='gnome-calculator'
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[96m\]\$(parse_git_branch)\[\033[00m\]$"
+
 
 ##-----------------------------------------------------
 ## synth-shell-prompt.sh

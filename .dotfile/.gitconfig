@@ -1,7 +1,24 @@
 [user]
 	name = Soumik
-	email = soumik20020906@gmail.com
+	email = soumik20020906+github@gmail.com
 [safe]
 	directory = /mnt/34FA4F03FA4EC0BA/Python/College/Vehicle speed detection\n
 	directory = /mnt/34FA4F03FA4EC0BA/Python/College/Vehicle speed detection
 	directory = /mnt/34FA4F03FA4EC0BA/Setup
+	directory = /mnt/34FA4F03FA4EC0BA/linux/Cp/DSA Sheet
+	directory = /mnt/34FA4F03FA4EC0BA/Coding/Vehicle speed detection
+	directory = /mnt/sda3/linux/Java/Calculator
+	directory = /mnt/sda3/Coding/Vehicle speed detection
+	directory = /mnt/sda3/linux/Portfolio
+	directory = /mnt/sda3/linux/Python/ml
+	directory = /mnt/sda3/linux/Python/Computer Networks
+	directory = /mnt/sda3/linux/Js/angcc/angcc
+	directory = /mnt/sda3/linux/Js/Attendance Manager
+	directory = /mnt/sda3/Campus/AttendNow
+	directory = /mnt/sda3/Campus/Projects/myProject
+	directory = /mnt/sda3/linux/Js/backend
+	directory = /mnt/sda3/linux/Java/Spring/test/ecommerce
+	directory = /mnt/sda3/linux/Java/Spring/test/ecommerce
+	directory = /mnt/sda3/Setup
+[commit]
+	gpgsign = false

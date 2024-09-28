@@ -109,3 +109,21 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+alias cpu="sensors | grep -Po '\+\d{2}\.\d\WC\s'"
+alias pbcopy='xsel --input --clipboard'
+alias pbpaste='xsel --output --clipboard'
+alias weather='curl wttr.in/Dankuni'
+alias calc='gnome-calculator'
+#ADD PATH
+export PATH="/home/soumik/.local/bin:$PATH"
+export PATH="/opt/lampp:$PATH"
+export JAVA_HOME='/usr/lib/jvm/java-21-openjdk-amd64'
+export WD='/mnt/sda3/linux'
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+cow(){
+  if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
+   fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1)
+  fi
+}
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
