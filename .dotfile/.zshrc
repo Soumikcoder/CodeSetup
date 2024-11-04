@@ -109,21 +109,34 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#ALIAS CONFIGURATION
 alias cpu="sensors | grep -Po '\+\d{2}\.\d\WC\s'"
 alias pbcopy='xsel --input --clipboard'
 alias pbpaste='xsel --output --clipboard'
 alias weather='curl wttr.in/Dankuni'
 alias calc='gnome-calculator'
+alias bat='batcat --color=always'
+alias code='subl $(find ~/code/* -type d|fzf)'
+alias vf='fzf --preview="batcat --color=always {}"'
+
 #ADD PATH
+#PATH VARIABLES
 export PATH="/home/soumik/.local/bin:$PATH"
 export PATH="/opt/lampp:$PATH"
 export JAVA_HOME='/usr/lib/jvm/java-21-openjdk-amd64'
-export WD='/mnt/sda3/linux'
+export GTK_THEME='Adwaita:dark'
+
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+#source <(ng completion script)
+
+#FUN COWSAY SCRIPT
 cow(){
   if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
    fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1)
   fi
 }
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#typeset -g POWERLEVEL9K_INSTANT_PROMPT=off8
+
+

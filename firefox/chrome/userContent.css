@@ -1,0 +1,26 @@
+
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+
+    .click-target-container *, .top-sites-list * {
+        color: #fff !important ;
+        text-shadow: 2px 2px 2px #222 !important ;
+    }
+    /*:root {
+        --newtab-background-color-secondary: #222 !important;
+    }*/
+
+    body::before {
+        content: "" ;
+        z-index: -1 ;
+        position: fixed ;
+        top: 0 ;
+        left: 0 ;
+        background: #f9a no-repeat url(img/wallpaper.png) center ;
+/*         filter: brightness(80%) blur(8px) !important;*/
+         filter: brightness(80%) blur(1px) !important;
+        -webkit-filter: blur(8px);
+        background-size: cover ;
+        width: 100vw ;
+        height: 100vh ;
+    }
+}
