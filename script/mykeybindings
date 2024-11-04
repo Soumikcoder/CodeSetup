@@ -1,0 +1,53 @@
+[/]
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', '__dummy__']
+show-desklets=@as []
+
+[custom-keybindings/custom0]
+binding=['<Super>x']
+command='cinnamon-settings'
+name='Settings'
+
+[custom-keybindings/custom1]
+binding=['<Shift><Super>r']
+command='simplescreenrecorder'
+name='Screen Recorder'
+
+[custom-keybindings/custom2]
+binding=['<Super>r']
+command='rofi -show drun'
+name='Run'
+
+[custom-keybindings/custom3]
+binding=['<Super>s']
+command='subl'
+name='Sublime Text'
+
+[media-keys]
+calculator=['XF86Calculator', '<Super>c']
+email=['XF86Mail', '<Super>m']
+help=['<Super>h']
+mute-quiet=['<Alt>XF86AudioMute', '<Primary><Super>m']
+screensaver=['<Control><Alt>l', 'XF86ScreenSaver', '<Primary><Super>l']
+search=['XF86Search']
+shutdown=['<Control><Alt>End', 'XF86PowerOff', '<Super>q']
+suspend=['XF86Sleep', '<Primary><Super>s']
+terminal=['<Primary><Alt>t', '<Super>Return']
+volume-down-quiet=['<Alt>XF86AudioLowerVolume', '<Primary><Super>Down']
+volume-up-quiet=['<Alt>XF86AudioRaiseVolume', '<Primary><Super>Up']
+www=['XF86WWW', '<Super>b']
+
+[wm]
+close=['<Alt>F4', '<Super>d']
+minimize=['<Super>Down']
+move-to-workspace-left=['<Primary><Shift>Left']
+move-to-workspace-right=['<Primary><Shift>Right']
+push-tile-down=@as []
+push-tile-up=@as []
+show-desktop=@as []
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-5=['<Super>5']
+switch-to-workspace-6=['<Super>6']
+toggle-maximized=['<Alt>F10', '<Super>Up']
