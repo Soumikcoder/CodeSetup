@@ -196,9 +196,39 @@ default_border pixel 0
 for_window [all] title_window_icon on
 bar {
         status_command i3status --config ~/.config/i3/i3status.conf
-        position top
+        mode dock
+		position top
         i3bar_command i3bar --transparency
-        colors{
-                background  #000000aa
-        }
+        workspace_min_width 24
+		padding 2px 8px 2px 8px
+		#colors{
+         #       background  #000000aa
+        #}
+		colors {
+			background #000000aa
+			statusline #ffffffff
+			separator #fff
+			# colour of border, background, and text
+			focused_workspace #141c21 #d12f2c #93a1a1
+			active_workspace #141c21 #141c21 #93a1a1
+			inactive_workspace #141c21 #141c21 #93a1a1
+			urgent_workspace #141c21 #b08500 #93a1a1
+		}
+		font pango:JetBrainsMono DejaVu Sans Mono 10
 }
+
+# colour of border, background, text, indicator, and child_border
+client.focused #d12f2c #263640 #93a1a1 #696ebf #2587cc1
+client.focused_inactive #263640 #b08500 #93a1a1 #263640 #263640
+client.unfocused #263640 #b08500 #93a1a1 #263640 #263640
+client.urgent #263640 #b08500 #93a1a1 #263640 #263640
+client.placeholder #263640 #b08500 #93a1a1 #263640 #263640
+client.background #263640
+
+# window rules, you can find the window class using xprop
+for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] floating enable
+for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] focus
+for_window [class=".*"] border pixel 8
+hide_edge_borders smart
+gaps inner 12
+smart_gaps on
